@@ -20,7 +20,7 @@ class CarInfoModel(Base):
     phone_number: Mapped[str] = mapped_column(String(15), nullable=False)
     image_url: Mapped[str] = mapped_column(String(255), nullable=False)
     image_count: Mapped[int] = mapped_column(Integer, nullable=False)
-    car_number: Mapped[str] = mapped_column(String(10), nullable=False)
+    car_number: Mapped[str] = mapped_column(String(10), nullable=True)
     car_vin: Mapped[str] = mapped_column(String(50), nullable=False)
     datetime_found: Mapped[datetime] = mapped_column(DateTime,
                                                      server_default=func.now(),
