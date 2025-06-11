@@ -1,4 +1,4 @@
-# Scrapy settings for testcase project
+# Scrapy settings for auto_ria project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -7,16 +7,16 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = "testcase"
+BOT_NAME = "auto_ria"
 
-SPIDER_MODULES = ["testcase.spiders"]
-NEWSPIDER_MODULE = "testcase.spiders"
+SPIDER_MODULES = ["auto_ria.spiders"]
+NEWSPIDER_MODULE = "auto_ria.spiders"
 
 ADDONS = {}
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = "testcase (+http://www.yourdomain.com)"
+# USER_AGENT = 'Mozilla/5.0 (Linux; Android 10; SM-G960F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.120 Mobile Safari/537.36'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
@@ -47,13 +47,13 @@ ROBOTSTXT_OBEY = True
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    "testcase.middlewares.TestcaseSpiderMiddleware": 543,
+#    "auto_ria.middlewares.AutoRiaSpiderMiddleware": 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    "testcase.middlewares.TestcaseDownloaderMiddleware": 543,
+#    "auto_ria.middlewares.AutoRiaDownloaderMiddleware": 543,
 #}
 
 # Enable or disable extensions
@@ -65,7 +65,7 @@ ROBOTSTXT_OBEY = True
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 #ITEM_PIPELINES = {
-#    "testcase.pipelines.TestcasePipeline": 300,
+#    "auto_ria.pipelines.AutoRiaPipeline": 300,
 #}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
